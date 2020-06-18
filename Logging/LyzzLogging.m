@@ -6,7 +6,7 @@
 + (void) logString:(NSString*)string {
 
     NSString *LOGGING_HOST_IP = @"192.168.178.82";
-    BOOL LOGGING_ENABLED = true;
+    BOOL LOGGING_ENABLED = false;
 
     if (!LOGGING_ENABLED) {
         return;
