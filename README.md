@@ -9,6 +9,19 @@ I am currently not sure if I will release
 Lyzz because [Ryan Nair](https://github.com/ryannair05) is
 maintaining a fork of the original Mitsuha Forever.
 
+## Features
+
+Currently, Lyzz supports the following things (changable via tweak settings):
+
+**Apps**
+- Lockscreen Music Notification
+- Spotify
+- Apple Music
+
+**Color modes**:
+- Custom Color
+- ColorFlow 5
+
 ### Developer instructions
 You can use the normal commands like make package etc. when you have THEOS installed.
 
