@@ -1,0 +1,14 @@
+{
+    "name": "loggingdesktopserver",
+    "version": "1.0.0",
+    "description": "",
+    "main": "LoggingDesktopServer.js",
+    "author": "Marcel Braun",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mdns": "^2.5.1"
+    },
+    "scripts": {
+        "start": "node LoggingDesktopServer.js"
+    }
+}

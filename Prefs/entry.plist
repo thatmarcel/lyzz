@@ -1,0 +1,10 @@
+{
+    entry = {
+	    bundle = LyzzPrefs;
+	    cell = PSLinkCell;
+	    detail = LyzzPrefsController;
+	    isController = 1;
+	    label = Lyzz;
+		// icon = icon.png;
+    };
+}

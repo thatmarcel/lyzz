@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Developed Mitsuha (iOS 10 and earlier)</string>
+		</dict>
+
+		<!-- Twitter Cell -->
+		<dict>
+    		<key>cellClass</key>
+    		<string>HBTwitterCell</string>
+    		<key>label</key>
+    		<string>c0ldra1n</string>
+    		<key>user</key>
+    		<string>0xc0ldra1n</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Updated Mitsuha to work on iOS 13 => Mitsuha Forever</string>
+		</dict>
+
+		<!-- Twitter Cell -->
+		<dict>
+    		<key>cellClass</key>
+    		<string>HBTwitterCell</string>
+    		<key>label</key>
+    		<string>ConorTheDev</string>
+    		<key>user</key>
+    		<string>conorthedev</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Lyzz was written from the ground up but it uses some things from Mitsuha (Forever), especially the way to hook mediaserverd and extract audiobuffers and how to process them was taken from AudioSnapshotServer and libmitsuha</string>
+		</dict>
+
+	</array>
+	<key>title</key>
+	<string>Credits</string>
+</dict>
+</plist>

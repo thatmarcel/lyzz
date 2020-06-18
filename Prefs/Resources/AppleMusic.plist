@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+		<dict>
+    		<key>cell</key>
+    		<string>PSGroupCell</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Enable in Apple Music</string>
+			<key>default</key>
+			<true />
+			<key>defaults</key>
+			<string>com.thatmarcel.tweaks.lyzz.prefs.defaults</string>
+			<key>key</key>
+			<string>apple-music-enabled</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Colors</string>
+			<key>footerText</key>
+			<string>You need to have ColorFlow 5 (Packix) installed to use the ColorFlow option</string>
+		</dict>
+
+		<dict>
+    		<key>cell</key>
+    		<string>PSDefaultCell</string>
+    		<key>cellClass</key>
+    		<string>AppearanceSelectionTableCell</string>
+    		<key>options</key>
+    		<array>
+        		<dict>
+            		<key>text</key>
+            		<string>ColorFlow 5</string>
+            		<key>image</key>
+            		<string>colorflow-icon</string>
+        		</dict>
+        		<dict>
+            		<key>text</key>
+            		<string>Custom color</string>
+            		<key>image</key>
+            		<string>custom-color-icon</string>
+        		</dict>
+    		</array>
+    		<key>defaults</key>
+    		<string>com.thatmarcel.tweaks.lyzz.prefs.defaults</string>
+    		<key>key</key>
+    		<string>apple-music-color-style</string>
+    		<key>height</key>
+    		<integer>210</integer>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>cellClass</key>
+			<string>HBColorPickerTableCell</string>
+			<key>defaults</key>
+			<string>com.thatmarcel.tweaks.lyzz.prefs.defaults</string>
+			<key>key</key>
+    		<string>apple-music-custom-color</string>
+			<key>default</key>
+			<string>#ffffff</string>
+			<key>label</key>
+			<string>Custom Color</string>
+			<key>showAlphaSlider</key>
+			<false />
+		</dict>
+
+	</array>
+	<key>title</key>
+	<string>Apple Music</string>
+</dict>
+</plist>
