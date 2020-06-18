@@ -18,9 +18,12 @@ Currently, Lyzz supports the following things (changable via tweak settings):
 - Spotify
 - Apple Music
 
-**Color modes**:
+**Color modes**
 - Custom Color
 - ColorFlow 5
+
+**Visulaizer styles**
+- Bars
 
 ### Developer instructions
 You can use the normal commands like make package etc. when you have THEOS installed.
