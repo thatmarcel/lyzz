@@ -5,7 +5,7 @@ After ConorTheDev stopped maintaining Mitsuha Forever,
 I decided I wanted to rewrite Mitsuha Forever to be easier
 to maintain and more stable.
 
-I am currently not sure, if I will release
+I am currently not sure if I will release
 Lyzz because [Ryan Nair](https://github.com/ryannair05) is
 maintaining a fork of the original Mitsuha Forever.
 
