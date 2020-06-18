@@ -22,7 +22,7 @@ Currently, Lyzz supports the following things (changable via tweak settings):
 - Custom Color
 - ColorFlow 5
 
-**Visulaizer styles**
+**Visualizer styles**
 - Bars
 
 ### Developer instructions
