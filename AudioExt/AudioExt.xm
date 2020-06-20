@@ -42,7 +42,7 @@ AudioExt *AudioExtInstance;
         if (![[[SavedPrefs alloc] init] isEnabled]) {
             return;
         }
-        
+
         self.accelerateIsReady = false;
 
         [LyzzLogging logString: @"[AudioExt] Starting timers"];
@@ -94,6 +94,7 @@ AudioExt *AudioExtInstance;
 
         NSArray *values = @[
             [NSNumber numberWithFloat: -processed[0]],
+            [NSNumber numberWithFloat: -processed[12]],
             [NSNumber numberWithFloat: -processed[oneTwelfth] * 5],
             [NSNumber numberWithFloat: -processed[oneTwelfth * 2] * 5],
             [NSNumber numberWithFloat: -processed[oneTwelfth * 3] * 5],
@@ -103,8 +104,7 @@ AudioExt *AudioExtInstance;
             [NSNumber numberWithFloat: -processed[oneTwelfth * 7] * 5],
             [NSNumber numberWithFloat: -processed[oneTwelfth * 8] * 5],
             [NSNumber numberWithFloat: -processed[oneTwelfth * 9] * 5],
-            [NSNumber numberWithFloat: -processed[oneTwelfth * 10] * 5],
-            [NSNumber numberWithFloat: -processed[oneTwelfth * 11] * 5]
+            [NSNumber numberWithFloat: -processed[oneTwelfth * 10] * 5]
         ];
 
         NSMutableDictionary *userInfo = [NSMutableDictionary new];

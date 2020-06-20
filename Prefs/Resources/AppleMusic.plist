@@ -27,6 +27,43 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
+			<string>Style</string>
+		</dict>
+
+		<dict>
+    		<key>cell</key>
+    		<string>PSDefaultCell</string>
+    		<key>cellClass</key>
+    		<string>AppearanceSelectionTableCell</string>
+    		<key>options</key>
+    		<array>
+        		<dict>
+            		<key>text</key>
+            		<string>Bars</string>
+            		<key>image</key>
+            		<string>style-bars-icon</string>
+        		</dict>
+        		<dict>
+            		<key>text</key>
+            		<string>Waves</string>
+            		<key>image</key>
+            		<string>style-wave-icon</string>
+        		</dict>
+    		</array>
+    		<key>defaults</key>
+    		<string>com.thatmarcel.tweaks.lyzz.prefs.defaults</string>
+    		<key>key</key>
+    		<string>apple-music-view-style</string>
+    		<key>height</key>
+    		<integer>210</integer>
+			<key>tintColor</key>
+			<string>#ff00ff</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
 			<string>Colors</string>
 			<key>footerText</key>
 			<string>You need to have ColorFlow 5 (Packix) installed to use the ColorFlow option</string>
@@ -58,6 +95,8 @@
     		<string>apple-music-color-style</string>
     		<key>height</key>
     		<integer>210</integer>
+			<key>tintColor</key>
+			<string>#ff00ff</string>
 		</dict>
 
 		<dict>

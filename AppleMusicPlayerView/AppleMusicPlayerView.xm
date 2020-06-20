@@ -18,9 +18,12 @@ SavedPrefs *prefs = [[SavedPrefs alloc] init];
 
         [LyzzLogging logString: @"[AppleMusicPlayerView] Adding view"];
 
-        CGRect rect = CGRectMake(16, 0, self.view.subviews[3].bounds.size.width - 32, self.view.subviews[3].bounds.size.height);
+        if ([prefs viewStyleForType: AppleMusicType] == LyzzViewTypeBars) {
+            lyzzView = [[LyzzViewBars alloc] initWithFrame: self.view.subviews[3].bounds];
+        } else {
+            lyzzView = [[LyzzViewJello alloc] initWithFrame: self.view.subviews[3].bounds];
+        }
 
-        lyzzView = [[LyzzViewBars alloc] initWithFrame: rect];
         [self.view.subviews[3] addSubview: lyzzView];
         [lyzzView setupWithType: AppleMusicType];
 

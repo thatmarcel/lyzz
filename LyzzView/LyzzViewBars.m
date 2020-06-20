@@ -10,19 +10,23 @@
         CGFloat spacing = 8;
         CGFloat numberOfBars = 10;
         CGFloat barCornerRadius = 4;
-        CGFloat barWidth = 26;
+        CGFloat barWidth = (self.frame.size.width - 32.0) / 12.0;
 
         for (int i = 0; i < numberOfBars; i++) {
             CALayer *layer = [[CALayer alloc] init];
             layer.cornerRadius = barCornerRadius;
-            layer.frame = CGRectMake(i * (barWidth + spacing), self.frame.size.height, barWidth, 0);
+            CGFloat x = (i * (barWidth + spacing));
+            if (i == 0) {
+                x += 16;
+            }
+            layer.frame = CGRectMake(x, self.frame.size.height, barWidth, 0);
             layer.opacity = 0.7;
             if ([self.prefs isColorFlowEnabledForType: self.type]) {
                 layer.backgroundColor = self.color != NULL ? self.color.CGColor : [UIColor whiteColor].CGColor;
             } else {
                 layer.backgroundColor = [self.prefs customColorForType: self.type].CGColor;
             }
-            [self.layer addSublayer:layer];
+            [self.layer addSublayer: layer];
         }
     }
 

@@ -1,7 +1,7 @@
 #import "LockscreenNowPlayingView.h"
 
 BOOL addedView = false;
-LyzzViewBars *lyzzView;
+LyzzView *lyzzView;
 
 UIColor *nextColor;
 
@@ -31,7 +31,14 @@ SavedPrefs *prefs = [[SavedPrefs alloc] init];
     MRPlatterViewController *platterViewController = (MRPlatterViewController*) [self valueForKey:@"_platterViewController"];
     UIView *nowPlayingView = [platterViewController view];
 
-    lyzzView = [[LyzzViewBars alloc] initWithFrame: nowPlayingView.bounds];
+    CGRect frame = CGRectMake(-8, 0, nowPlayingView.bounds.size.width + 16, nowPlayingView.bounds.size.height);
+
+    if ([prefs viewStyleForType: LockscreenNotificationType] == LyzzViewTypeBars) {
+        lyzzView = [[LyzzViewBars alloc] initWithFrame: frame];
+    } else {
+        lyzzView = [[LyzzViewJello alloc] initWithFrame: frame];
+    }
+
     [nowPlayingView addSubview: lyzzView];
     [nowPlayingView sendSubviewToBack: lyzzView];
     [lyzzView setupWithType: LockscreenNotificationType];

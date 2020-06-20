@@ -1,5 +1,5 @@
-# To build, clone https://github.com/cbyrne/libappearancecell
-# and run 'make' to put the necessary files for libappearancecell
+# To build, clone https://github.com/cbyrne/libappearancecell,
+# cd into it and run 'make' to put the necessary files for libappearancecell
 # on your system
 
 include $(THEOS)/makefiles/common.mk
@@ -13,5 +13,5 @@ SUBPROJECTS += Prefs
 
 include $(THEOS_MAKE_PATH)/aggregate.mk
 
-# after-install::
-#	install.exec "sbreload"
+after-install::
+	install.exec "sbreload"

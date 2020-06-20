@@ -13,14 +13,17 @@
 
                 @"lockscreen-notification-enabled": @true,
                 @"lockscreen-notification-color-style": @0,
+                @"lockscreen-notification-view-style": @0,
                 @"lockscreen-notification-custom-color": @"#ffffff",
 
                 @"apple-music-enabled": @true,
                 @"apple-music-color-style": @0,
+                @"apple-music-view-style": @0,
                 @"apple-music-custom-color": @"#ffffff",
 
                 @"spotify-enabled": @true,
                 @"spotify-color-style": @0,
+                @"spotify-view-style": @0,
                 @"spotify-custom-color": @"#ffffff"
             }];
         }
@@ -108,5 +111,25 @@
                             alpha: 1.0];
 
         return color;
+    }
+
+    - (LyzzViewType) viewStyleForType:(LyzzType)type {
+        NSString *key;
+
+        switch (type) {
+            case LockscreenNotificationType:
+                key = @"lockscreen-notification-color-style";
+                break;
+            case AppleMusicType:
+                key = @"apple-music-color-style";
+                break;
+            case SpotifyType:
+                key = @"spotify-color-style";
+                break;
+            default:
+                return false;
+        }
+
+        return (NSUInteger) [preferences integerForKey: key];
     }
 @end

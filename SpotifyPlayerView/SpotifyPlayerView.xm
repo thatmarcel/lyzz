@@ -16,9 +16,12 @@ SavedPrefs *prefs = [[SavedPrefs alloc] init];
 
     [LyzzLogging logString: @"[SpotifyPlayerView] Adding view"];
 
-    CGRect rect = CGRectMake(16, 0, [UIScreen mainScreen].bounds.size.width - 32, [UIScreen mainScreen].bounds.size.height);
+    if ([prefs viewStyleForType: SpotifyType] == LyzzViewTypeBars) {
+        lyzzView = [[LyzzViewBars alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    } else {
+        lyzzView = [[LyzzViewJello alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    }
 
-    lyzzView = [[LyzzViewBars alloc] initWithFrame: rect];
     [self.view addSubview: lyzzView];
     [lyzzView setupWithType: SpotifyType];
 
