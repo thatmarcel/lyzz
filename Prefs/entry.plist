@@ -5,6 +5,6 @@
 	    detail = LyzzPrefsController;
 	    isController = 1;
 	    label = Lyzz;
-		// icon = icon.png;
+		icon = icon.png;
     };
 }
