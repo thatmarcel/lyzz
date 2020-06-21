@@ -1,7 +1,7 @@
 Package: com.thatmarcel.tweaks.lyzz
 Name: Lyzz
 Depends: mobilesubstrate, ws.hbang.alderis, preferenceloader, ws.hbang.common (>= 1.11)
-Version: 0.0.1
+Version: 0.0.2
 Architecture: iphoneos-arm
 Description: Music visualizer (Spiritual successor / simpler rewrite of Mitsuha Forever)
 Maintainer: Marcel Braun

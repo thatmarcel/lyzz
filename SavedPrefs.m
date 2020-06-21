@@ -77,7 +77,7 @@
                 return false;
         }
 
-        return [preferences integerForKey: key] == 0;
+        return [@0 isEqual: ((NSNumber*) [preferences objectForKey: key])];
     }
 
     - (UIColor*) customColorForType:(LyzzType)type {
@@ -118,18 +118,18 @@
 
         switch (type) {
             case LockscreenNotificationType:
-                key = @"lockscreen-notification-color-style";
+                key = @"lockscreen-notification-view-style";
                 break;
             case AppleMusicType:
-                key = @"apple-music-color-style";
+                key = @"apple-music-view-style";
                 break;
             case SpotifyType:
-                key = @"spotify-color-style";
+                key = @"spotify-view-style";
                 break;
             default:
                 return false;
         }
 
-        return (NSUInteger) [preferences integerForKey: key];
+        return [(NSNumber*) [preferences objectForKey: key] unsignedIntegerValue];
     }
 @end

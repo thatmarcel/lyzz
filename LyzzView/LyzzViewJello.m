@@ -43,6 +43,9 @@ static CGPoint controlPointForPoints(CGPoint p1, CGPoint p2) {
 
         self.waveLayer.opacity = 0.7;
         self.subwaveLayer.opacity = 0.2;
+
+        self.waveLayer.fillColor = [self.prefs customColorForType: self.type].CGColor;
+        self.subwaveLayer.fillColor = [self.prefs customColorForType: self.type].CGColor;
     }
 
     - (void) updateViewWithValues:(NSArray*)values {

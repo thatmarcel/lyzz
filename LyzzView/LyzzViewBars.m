@@ -19,7 +19,7 @@
             if (i == 0) {
                 x += 16;
             }
-            layer.frame = CGRectMake(x, self.frame.size.height, barWidth, 0);
+            layer.frame = CGRectMake(16.0 + x, self.frame.size.height, barWidth, 0);
             layer.opacity = 0.7;
             if ([self.prefs isColorFlowEnabledForType: self.type]) {
                 layer.backgroundColor = self.color != NULL ? self.color.CGColor : [UIColor whiteColor].CGColor;
@@ -39,7 +39,7 @@
             CGFloat barHeight = self.frame.size.height * [(NSNumber*) values[i] doubleValue];
             CGFloat y = self.frame.size.height - barHeight;
 
-            layer.frame = CGRectMake(i * (barWidth + spacing), y, barWidth, barHeight + 8);
+            layer.frame = CGRectMake(16.0 + (i * (barWidth + spacing)), y, barWidth, barHeight + 8);
 
             i++;
         }

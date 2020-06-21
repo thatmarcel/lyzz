@@ -43,6 +43,9 @@ SavedPrefs *prefs = [[SavedPrefs alloc] init];
     [nowPlayingView sendSubviewToBack: lyzzView];
     [lyzzView setupWithType: LockscreenNotificationType];
 
+    lyzzView.layer.masksToBounds = true;
+    lyzzView.layer.cornerRadius = 14;
+
     addedView = true;
 }
 
